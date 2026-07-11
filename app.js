@@ -28,10 +28,12 @@ content.forEach((val) => {
 
                 val2.nextElementSibling.style.height = val2.nextElementSibling.getAttribute("data-hight") + "px"
                 val2.nextElementSibling.setAttribute("data-status", "on")
+                val2.children[2].style.transform = "rotate(180deg)"
 
             } else {
                 val2.nextElementSibling.style.height = 0
                 val2.nextElementSibling.setAttribute("data-status", "off")
+                val2.children[2].style.transform = "rotate(0deg)"
             }
 
 
